@@ -1,10 +1,10 @@
 import { ChevronRight, Heart, Star } from 'lucide-react';
 
 export default function Hero() {
-  const scrollToOffers = () => {
-    const offersSection = document.getElementById('offers-section');
-    if (offersSection) {
-      offersSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  const scrollToChallenge = () => {
+    const challengeSection = document.getElementById('challenge-steps');
+    if (challengeSection) {
+      challengeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
@@ -19,40 +19,41 @@ export default function Hero() {
               className="h-20 sm:h-24 lg:h-28 mb-10 mx-auto lg:mx-0"
             />
             <h1 className="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold tracking-tight leading-tight mb-6">
-              Participe do <span className="text-yellow-400 whitespace-nowrap">Desafio 60 Dias.</span> Recupere a <span className="text-yellow-400">força</span> e o <span className="text-yellow-400">volume</span> do seu cabelo
+              Você já tentou vários produtos para queda de cabelo… e nada realmente funcionou?
             </h1>
 
             <p className="text-lg sm:text-xl text-white/90 leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
-              Um tratamento com 7 ativos concentrados que agem direto na raiz dos fios.
-              <br />
-              Resultados visíveis, aprovados por especialistas — e 100% garantidos.
+              Isso é mais comum do que parece. A maioria das fórmulas age só na superfície do fio, e por isso os resultados somem ou nunca aparecem.
+            </p>
+
+            <p className="text-base sm:text-lg text-white/95 leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0">
+              <span className="text-yellow-400 font-bold">No Desafio 60 Dias</span>, o foco não é "maquiar" o cabelo — é tratar a raiz com 7 ativos concentrados que reduzem a queda e aceleram o crescimento, com garantia total.
             </p>
 
             <p className="text-base sm:text-lg text-yellow-400 font-semibold mb-2 max-w-2xl mx-auto lg:mx-0">
-              Entre no desafio → siga o tratamento → veja os resultados
+              Entre no desafio → siga o protocolo → veja os resultados
             </p>
 
             <div className="flex items-center justify-center lg:justify-start gap-2 mb-8 max-w-2xl mx-auto lg:mx-0">
               <Star className="w-5 h-5 text-yellow-400 fill-yellow-400 flex-shrink-0" />
               <p className="text-base sm:text-lg text-white/90 font-semibold">
-                Se não gostar, seu dinheiro volta.
+                Se não funcionar pra você, <span className="text-yellow-400">devolvemos 100% do seu dinheiro</span>.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6">
               <button
-                onClick={scrollToOffers}
+                onClick={scrollToChallenge}
                 className="btn-primary text-base sm:text-lg"
-                aria-label="Participar do Desafio 60 Dias"
+                aria-label="Ver como funciona o Desafio"
               >
-                Quero começar meu Desafio 60 Dias agora!
+                Quero ver como funciona o Desafio
                 <ChevronRight className="w-5 h-5" />
               </button>
             </div>
 
-            <div className="flex items-center justify-center lg:justify-start gap-2 text-base text-white/90 mb-4">
-              <Heart className="w-5 h-5 text-yellow-400 fill-yellow-400" />
-              <span className="font-bold">Frete grátis + garantia total de satisfação.</span>
+            <div className="flex items-center justify-center lg:justify-start text-base text-white/90 mb-4">
+              <span>Frete grátis + garantia total de satisfação.</span>
             </div>
           </div>
 

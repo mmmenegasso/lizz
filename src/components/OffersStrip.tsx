@@ -54,7 +54,7 @@ export default function OffersStrip() {
             Recupere seus cabelos em casa — escolha o kit ideal e participe do Desafio 60 Dias!
           </h2>
           <p className="text-lg text-yellow-400 max-w-2xl mx-auto font-semibold">
-            Todos os kits incluem frete grátis + garantia total de satisfação.
+            Participe sem risco, últimos kits com frete grátis e garantia total.
           </p>
         </div>
 

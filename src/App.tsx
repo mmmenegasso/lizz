@@ -58,8 +58,8 @@ function App() {
     <div className="min-h-screen">
       <FreeShippingBanner />
       <Hero />
-      <PainIntro />
       <ProofCarousel />
+      <PainIntro />
       <Ingredients />
       <Challenge />
       <OffersStrip />
